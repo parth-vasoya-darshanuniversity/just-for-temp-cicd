@@ -36,7 +36,6 @@
         text-align: right;
         padding-top: 11em;
         background-color: red;
-
       }
       .textColumn p {
         width: 75%;
@@ -75,10 +74,12 @@
   <body>
     <div class="textColumn">
       <h1>Congratulations</h1>
-      <p>Your first AWS Elastic Beanstalk Node.js application is now running on your own dedicated environment in the AWS Cloud</p>
+      <p>Your first AWS Elastic Beanstalk Node.js application is now running on your own dedicated environment in the AWS Cloud.<br>
+        <strong>Timestamp:</strong> <span id="timestamp"></span>
+      </p>
     </div>
     <div class="linksColumn">
-      <h2>What's Next?</h2>
+      <h2>What's Next? | Vasoya Parth</h2>
       <ul>
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">AWS Elastic Beanstalk overview</a></li>
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html">AWS Elastic Beanstalk concepts</a></li>
@@ -89,5 +90,10 @@
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.loggingS3.title.html">Working with Logs</a></li>
       </ul>
     </div>
+
+    <script>
+      // JavaScript to display the current timestamp
+      document.getElementById('timestamp').innerHTML = new Date().toLocaleString();
+    </script>
   </body>
 </html>
